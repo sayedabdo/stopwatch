@@ -23,9 +23,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="RESET">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="RESET"/>
+                                <connections>
+                                    <action selector="reserbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F4Y-FI-q6Q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr2-iI-xqQ">
                                 <rect key="frame" x="16" y="315" width="139" height="237"/>
@@ -33,6 +34,9 @@
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3m3-Up-3Wr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwu-dd-fTF">
                                 <rect key="frame" x="150" y="560" width="46" height="30"/>
@@ -52,11 +56,20 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="END"/>
+                                <connections>
+                                    <action selector="endbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bim-Pd-Jyx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="endbtn" destination="8i4-7L-L2x" id="N5h-qd-sxT"/>
+                        <outlet property="reserbtn" destination="gjn-YN-XVV" id="V1K-ad-Be7"/>
+                        <outlet property="resultlabel" destination="olY-SS-8YP" id="aOC-VY-kRS"/>
+                        <outlet property="startbtn" destination="tr2-iI-xqQ" id="o4l-kU-FUu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
